@@ -3569,12 +3569,21 @@ void S9xControlPostLoadState (struct SControlSnapshot *s)
 		for (int j = 0; j < 2; j++)
 		{
 			COPY(mouse[j].delta_x);
+			//i++;
 			COPY(mouse[j].delta_y);
-			COPY(mouse[j].old_x);
-			COPY(mouse[j].old_y);
-			COPY(mouse[j].cur_x);
-			COPY(mouse[j].cur_y);
+			//i++;
+			
+			//COPY(mouse[j].old_x);
+			i+=2;
+			//COPY(mouse[j].old_y);
+			i+=2;
+			//COPY(mouse[j].cur_x);
+			i+=2;
+			//COPY(mouse[j].cur_y);
+		        i+=2;
+			
 			COPY(mouse[j].buttons);
+			//i++;
 		}
 
 		COPY(superscope.x);
